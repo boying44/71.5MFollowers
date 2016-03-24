@@ -1,14 +1,14 @@
 # 71.5MFollowers
 
-####The Team
-Cindy Li
-Boying Tang
+####Team Trump 2016
+Cindy Li  
+Boying Tang  
 Shi Shu
 
 ####Display Data
-Facebook likes
-Twitter followers
+Social media presence of 2016 presidential candidates 
 
 ####Data Sources
 Twitter
 Facebook
+Reddit
