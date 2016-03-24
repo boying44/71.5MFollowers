@@ -12,3 +12,5 @@ Social media presence of 2016 presidential candidates
 Twitter  
 Facebook  
 Reddit  
+Youtube  
+Instagram  
