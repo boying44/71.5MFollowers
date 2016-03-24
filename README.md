@@ -9,6 +9,6 @@ Shi Shu
 Social media presence of 2016 presidential candidates 
 
 ####Data Sources
-Twitter
-Facebook
-Reddit
+Twitter  
+Facebook  
+Reddit  
