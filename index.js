@@ -1,13 +1,13 @@
 //facebook likes /twitter followers (in millions)
 //order - Trump, Clinton, Carson, Sanders, Cruz, Rubio, Christie, Fiorina,Bush, Kasich
-var facebook = [5.6,2.3,5.1,2.6,1.8,1.3,0.15,0.6,0.4,0.2];
-var twitter = [6.1,5.3,1.1,2.7,1.5,1.1,0.4,0.35,0.3,0.1];
+var facebook = [6.7,3.0,5.2,3.5,2.0,1.4,0.17,0.56,0.34,0.28];
+var twitter = [7.3,5.8,1.2,1.8,0.99,1.3,0.12,0.67,0.52,0.26];
 //youtube subscribers(in thousands)
-var youtube = [43.1,37.2,16.8,92.4,26.2,15.8,1.3,2.0,4.7,1.2];
+var youtube = [48.1,42.5,16.9,115.1,40.8,22.5,1.3,2.0,4.8,2.5];
 //instagram followers(in ten thousands)
-var instagram = [95.4,78.2,25.9,71.5,8.1,7.9,2.6,0.0,5.2,1.1];
+var instagram = [130.0,100.0,28.4,110.0,11.5,11.1,3.0,0.5,5.9,2.5];
 //Subreddit subscribers......(in thousands)
-var reddit = [8.9,3.3,0.23,176.8,1.1,0.66,0.09,0.03,0.12,0.2];
+var reddit = [82.6,9.1,0.22,216.6,1.3,1.0,0.09,0.03,0.16,0.95];
 
 
 
