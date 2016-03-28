@@ -17,6 +17,6 @@ Updated 3-28-2016 with info from:
 Twitter  www.twitter.com  
 Facebook  www.facebook.com  
 Reddit  www.reddit.com  
-Youtube  wwww.youtube.com  
+Youtube  www.youtube.com  
 Instagram  www.instagram.com  
 
