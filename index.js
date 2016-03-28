@@ -9,18 +9,32 @@ var instagram = [95.4,78.2,25.9,71.5,8.1,7.9,2.6,0.0,5.2,1.1];
 //Subreddit subscribers......(in thousands)
 var reddit = [8.9,3.3,0.23,176.8,1.1,0.66,0.09,0.03,0.12,0.2];
 
+//starts off by displaying facebook
+var media = "facebook";
+
+//index of candidates
+var democrats = [Clinton, Sanders];
+
+//Changes the media that the page displays
+var change = function(e){
+    //get the ID of button from event and change media to it
+};
 
 
+var isdemocrat = function(name){
+    return democrats.indexof(name) != -1;
+};
 
-
-var scale = d3.scale.linear()
+var scale = d3.scale.linear(){
     .domain([0,d3.max()])
     .range([0,420]);
-
+};
 
 
 var load = function(){
-
+    d3.select(".chart")
+	.selectAll("div")
+	.data(window[media]);
 }
 
 window.addEventListener('load', load);
