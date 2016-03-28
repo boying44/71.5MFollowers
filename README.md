@@ -13,9 +13,9 @@ Based off of:
 http://www.cnet.com/news/2016-elections-comparing-presidential-candidates-on-social-media/
 
 Updated information from:
-Twitter  www.twitter.com
-Facebook  www.facebook.com
-Reddit  www.reddit.com
-Youtube  wwww.youtube.com
-Instagram  www.instagram.com
+Twitter  www.twitter.com  
+Facebook  www.facebook.com  
+Reddit  www.reddit.com  
+Youtube  wwww.youtube.com  
+Instagram  www.instagram.com  
 
