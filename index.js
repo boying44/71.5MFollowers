@@ -44,7 +44,7 @@ var findheader = function(){
     var counter = 0;
     while(counter < dict.length){
 	if(media == dict[counter].key){
-	    d3.selectAll("h1")
+	    d3.selectAll("h2")
 		.text(dict[counter].value)
 	}
 	counter ++;
