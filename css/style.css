@@ -1,9 +1,13 @@
+body {
+    text-align: center;
+}
 .demokey {
     width: 50px;
     height: 30px;
     border: 1px solid black;
+    margin: 2px;
     text-align: center;
-    vertical-aligh: middle;
+    vertical-align: middle;
     background-color: blue;
     display: inline-block;
 }
@@ -12,7 +16,7 @@
     height: 30px;
     border: 1px solid black;
     text-align: center;
-    vertical-aligh: middle;
+    vertical-align: middle;
     background-color: red;
     display: inline-block;
 }
@@ -20,9 +24,10 @@
 #graph div {
   text-align: left;
   padding: 4px;
-  margin: 2px;
+  margin: 3px;
   border: 1px;
   color: black;
-  height: 26px;
+  height: 50px;
   border: 1px solid black;
 }
+

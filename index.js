@@ -11,21 +11,21 @@ var instagram = [13.00,10.00,2.84,11.00,1.15,1.11,0.30,0.05,0.59,0.25];
 //Subreddit subscribers......(in ten thousands)
 var reddit = [8.26,0.91,0.022,21.66,0.13,0.10,0.009,0.003,0.016,0.095];
 
+//photos
+var photos = ["trump.png", "clinton.png", "carson.png", "sanders.png", "cruz.png", "rubio.png", "christie.png", "fiorina.png", "bush.png", "kasich.png"]
+
 //starts off by displaying facebook
 var media = "facebook";
-
-//index of candidates
-var democrats = ["Clinton", "Sanders"];
 
 //headers
 var dict = [];
 dict.push({
     key:   "facebook",
-    value: "Amount of Facebook likes(in millions)"
+    value: "Amount of Facebook likes (in millions)"
 });
 dict.push({
     key:   "twitter",
-    value: "Amount of Twitter followers(in millions)"
+    value: "Amount of Twitter followers (in millions)"
 });
 dict.push({
     key:   "youtube",
@@ -44,7 +44,7 @@ var findheader = function(){
     var counter = 0;
     while(counter < dict.length){
 	if(media == dict[counter].key){
-	    d3.selectAll("h1")
+	    d3.selectAll("h2")
 		.text(dict[counter].value)
 	}
 	counter ++;
@@ -75,7 +75,7 @@ var scale = d3.scale.linear()
     .range([0,420]);
 
 var load = function(){
-    d3.select("#graph")
+    d3.select("#graph").append("a")
 	.selectAll("div")
 	.data(window[media])
         .enter().append("div")
@@ -89,7 +89,12 @@ var load = function(){
 		       return "red";
 		   }
 	       })
-        .text(function(d,i) {return candidates[i]});
+        //.text(function(d,i) {return candidates[i]})
+	.append('img')
+	.attr("src", function(d,i) {return "static/" + photos[i]})
+        .style("width", "50px")
+        .style("height", "50px")
+
 }
 
 window.addEventListener('load', load);
