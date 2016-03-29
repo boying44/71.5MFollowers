@@ -15,16 +15,52 @@ var media = "facebook";
 //index of candidates
 var democrats = ["Clinton", "Sanders"];
 
+//headers
+var dict = [];
+dict.push({
+    key:   "facebook",
+    value: "Amount of Facebook likes(in millions)"
+});
+dict.push({
+    key:   "twitter",
+    value: "Amount of Twitter followers(in millions)"
+});
+dict.push({
+    key:   "youtube",
+    value: "Amount of Youtube Subscribers(in thousands)"
+});
+dict.push({
+    key:   "instagram",
+    value: "Amount of Instagram followers(in thousands)"
+});
+dict.push({
+    key:   "reddit",
+    value: "Amount of subreddit subscribers(in thousands)"
+});
+
+var findheader = function(){
+    var counter = 0;
+    while(counter < dict.length){
+	if(media == dict[counter].key){
+	    d3.selectAll("h1")
+		.text(dict[counter].value)
+	}
+	counter ++;
+    }
+}
+
 //Changes the media that the page displays
 var change = function(e){
     //get the ID of button from event and change media to it
     media = e.srcElement.innerHTML.toString().toLowerCase();
+    findheader();
 };
 
 
 var isdemocrat = function(name){
     return democrats.indexof(name) != -1;
 };
+
 /*
 var scale = d3.scale.linear()
     .domain([0,d3.max()])
