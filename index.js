@@ -29,15 +29,15 @@ dict.push({
 });
 dict.push({
     key:   "youtube",
-    value: "Amount of Youtube Subscribers(in ten thousands)"
+    value: "Amount of Youtube Subscribers (in ten thousands)"
 });
 dict.push({
     key:   "instagram",
-    value: "Amount of Instagram followers(in hundred thousands)"
+    value: "Amount of Instagram followers (in hundred thousands)"
 });
 dict.push({
     key:   "reddit",
-    value: "Amount of subreddit subscribers(in ten thousands)"
+    value: "Amount of subreddit subscribers (in ten thousands)"
 });
 
 var findheader = function(){
