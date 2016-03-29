@@ -62,7 +62,10 @@ var change = function(e){
 	.style("width",function(d){
 	    return scale(d) + "px";
 	})
-    
+    d3.select("#graph")
+	.selectAll("text")
+	.data(window[media])
+	.text(function(d,i){return candidates[i] + ": " + d});
 };
 
 
@@ -75,10 +78,10 @@ var scale = d3.scale.linear()
     .range([0,420]);
 
 var load = function(){
-    d3.select("#graph")
-	.selectAll("div")
+    bar = d3.select("#graph").selectAll("g")
 	.data(window[media])
-        .enter().append("div")
+        .enter().append("g");
+    bar.append("div")
 	.style("width", function(d) {return scale(d) + "px"})
 	.style("background-color",
 	       function(d,i) {
@@ -89,7 +92,8 @@ var load = function(){
 		       return "red";
 		   }
 	       })
-        .text(function(d,i) {return candidates[i]});
+    bar.append("text")
+        .text(function(d,i) {return candidates[i] + ": " + d });
 }
 
 window.addEventListener('load', load);
