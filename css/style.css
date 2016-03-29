@@ -17,11 +17,22 @@
     display: inline-block;
 }
 
+button {
+    font-size: 20px;
+    border-radius: 2px;
+    transition-duration:0.1s;
+    margin: 8px;
+}
+
+button:hover {
+    background-color: gray;
+    color:white;
+}
+
 #graph div {
   text-align: left;
   padding: 4px;
   margin: 2px;
-  border: 1px;
   color: black;
   height: 26px;
   border: 1px solid black;
