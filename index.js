@@ -13,23 +13,23 @@ var reddit = [82.6,9.1,0.22,216.6,1.3,1.0,0.09,0.03,0.16,0.95];
 var media = "facebook";
 
 //index of candidates
-var democrats = [Clinton, Sanders];
+var democrats = ["Clinton", "Sanders"];
 
 //Changes the media that the page displays
 var change = function(e){
     //get the ID of button from event and change media to it
+    media = e.srcElement.innerHTML.toString().toLowerCase();
 };
 
 
 var isdemocrat = function(name){
     return democrats.indexof(name) != -1;
 };
-
-var scale = d3.scale.linear(){
+/*
+var scale = d3.scale.linear()
     .domain([0,d3.max()])
     .range([0,420]);
-};
-
+*/
 
 var load = function(){
     d3.select(".chart")
@@ -38,4 +38,13 @@ var load = function(){
 }
 
 window.addEventListener('load', load);
-var b = document.getElementById('');
+var fb = document.getElementById('facebook');
+var tw = document.getElementById('twitter');
+var yt = document.getElementById('youtube');
+var ins = document.getElementById('instagram');
+var rd = document.getElementById('reddit');
+fb.addEventListener("click",change);
+tw.addEventListener("click",change);
+yt.addEventListener("click",change);
+ins.addEventListener("click",change);
+rd.addEventListener("click",change);
