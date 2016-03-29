@@ -12,3 +12,12 @@
     text-align: left;
     background-color: red;
 }
+
+#graph div {
+  text-align: left;
+  padding: 4px;
+  margin: 2px;
+  border: 1px;
+  color: black;
+  height: 26px;
+}

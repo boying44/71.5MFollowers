@@ -1,5 +1,7 @@
 //facebook likes /twitter followers (in millions)
-//order - Trump, Clinton, Carson, Sanders, Cruz, Rubio, Christie, Fiorina,Bush, Kasich
+//order
+var candidates = ["Trump", "Clinton", "Carson", "Sanders", "Cruz", "Rubio", "Christie", "Fiorina", "Bush", "Kasich"]
+
 var facebook = [6.7,3.0,5.2,3.5,2.0,1.4,0.17,0.56,0.34,0.28];
 var twitter = [7.3,5.8,1.2,1.8,0.99,1.3,0.12,0.67,0.52,0.26];
 //youtube subscribers(in thousands)
@@ -32,9 +34,21 @@ var scale = d3.scale.linear()
 */
 
 var load = function(){
-    d3.select(".chart")
+    d3.select("#graph")
 	.selectAll("div")
-	.data(window[media]);
+	.data(window[media])
+        .enter().append("div")
+	.style("width", function(d) {return d*100 + "px"})
+	.style("background-color",
+	       function(d,i) {
+		   if (candidates[i] == "Sanders" || candidates[i] == "Clinton") {
+		       return "blue";
+		   }
+		   else {
+		       return "red";
+		   }
+	       })
+        .text(function(d,i) {return candidates[i]});
 }
 
 window.addEventListener('load', load);
