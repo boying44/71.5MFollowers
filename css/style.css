@@ -1,2 +1,14 @@
-.bar{
+.demokey {
+    width: 50px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: left;
+    background-color: blue;
+}
+.repukey {
+    width: 50px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: left;
+    background-color: red;
 }
