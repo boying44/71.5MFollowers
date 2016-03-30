@@ -81,10 +81,12 @@ var load = function(){
     bar = d3.select("#graph").selectAll("g")
 	.data(window[media])
         .enter().append("g");
+//	.style("width",window.innerWidth + "px")
+//	.style("height", "50px")
     bar.append('img')
 	.attr("src", function(d,i) {return "static/" + photos[i]})
         .style("width", "50px")
-        .style("height", "50px")
+	.style("height", "50px")
     bar.append("div")
 	.style("width", function(d) {return scale(d) + "px"})
 	.style("background-color",

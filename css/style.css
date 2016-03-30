@@ -37,19 +37,19 @@ button:hover {
 #graph div {
   text-align: left;
   padding: 4px;
-<<<<<<< HEAD
-  margin: 2px;
-=======
-  margin: 3px;
+  margin:3px;
+  margin-left: 60px;
   border: 1px;
->>>>>>> aa6d430301a13ca24657679914e81d4ecf2e32f3
   color: black;
   height: 50px;
   border: 1px solid black;
-<<<<<<< HEAD
 //  display:inline-block;
 }
-=======
+
+img {
+    float:left;
 }
 
->>>>>>> aa6d430301a13ca24657679914e81d4ecf2e32f3
+text{
+    float:right
+}
