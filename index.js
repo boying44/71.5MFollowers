@@ -81,8 +81,8 @@ var load = function(){
     bar = d3.select("#graph").selectAll("g")
 	.data(window[media])
         .enter().append("g");
-//	.style("width",window.innerWidth + "px")
-//	.style("height", "50px")
+    bar.append("text")
+        .text(function(d,i) {return candidates[i] + ": " + d });
     bar.append('img')
 	.attr("src", function(d,i) {return "static/" + photos[i]})
         .style("width", "50px")
@@ -98,8 +98,6 @@ var load = function(){
 		       return "red";
 		   }
 	       })
-    bar.append("text")
-        .text(function(d,i) {return candidates[i] + ": " + d });
     
 }
 
