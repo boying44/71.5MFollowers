@@ -74,7 +74,7 @@ var isdemocrat = function(name){
 };
 
 var scale = d3.scale.linear()
-    .domain([0,d3.max(window[media]) + 1])
+    .domain([0,d3.max(window[media]) + 2])
     .range([0,420]);
 
 var load = function(){
